@@ -57,7 +57,6 @@ def decode_sentence(word_to_encode):
     reverse_alpha_dict["/ "] = " "
     reverse_alpha_dict[" "] = ""
 
-    # Checking if sentence has the space at the end
     if word_to_encode[-1] != " ":
         word_to_encode += " "
 
@@ -65,7 +64,6 @@ def decode_sentence(word_to_encode):
     words_in_password = []
     whole_word = ""
 
-    # Looping through letters in word_to_encode
     for letter in word_to_encode:
         # Creating morse words out of letters,
         # if letter is space, append created word to list
